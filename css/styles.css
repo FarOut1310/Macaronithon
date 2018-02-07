@@ -1,3 +1,39 @@
+/*
+$font-stack: Helvetica, sans-serif;
+$primary-color: #fff
 
+body {
+	font: $font-stack;
+	color: $primary-color;
+}
+*/
+
+body {
+  font-family: Helvetica, sans-serif; }
+
+.item1 {
+  grid-area: logo; }
+
+.item2 {
+  grid-area: search; }
+
+.item3 {
+  grid-area: predator; }
+
+.item4 {
+  grid-area: human; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'logo logo' 'search search' 'predator human';
+  grid-gap: 20px;
+  background-color: #2196F3;
+  padding: 10px; }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
