@@ -1,0 +1,61 @@
+$main-color: #8A2BE2;
+
+/* ...............................................
+        			HEADER
+.................................................*/
+
+.macaronithon {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	width: 100vw;
+	height: 10vh;
+	margin: 0;
+	&--header {
+		
+		font-size: 2.5em;
+	}
+}
+.macaronithon--header-span1 {
+color: $main-color;
+}
+.macaronithon--header-span2 {
+color: 	#A52A2A;
+}
+/* ...............................................
+        			MAIN
+.................................................*/
+.mainArea {
+	width: 100vw;
+}
+
+
+.mainArea--pizza {
+	display: grid;
+	grid-template: 'main main main main';
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+.pizza--article {
+	background: lightblue;
+}
+.pizza--article-heading {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-size: 1.8em;
+	padding: 1%;
+} 
+
+.pizza--article-paragraph {
+	font-size: 1.3em;
+	padding: 3%;
+}
+.pizza--aside {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background: white;
+	}
+
+
