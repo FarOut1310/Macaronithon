@@ -7,8 +7,8 @@
 
 		<div class="mainArea1--searchField-left"></div>
 		<div class="mainArea1--searchField-center">
-			<button id="submit" onclick="submitMeal();">Go!</button>
-			<input class="awesomplete" placeholder="Search for the meal" data-list="Pizza">
+			<input class="awesomplete inputMeal" placeholder="Search for the meal" data-list="Pizza, Hamburger">
+			<button class="submitMeal"><span>Go!</span></button>
 		</div>
 		<div class="mainArea1--searchField-right"></div>
 	</section>
@@ -22,7 +22,27 @@
 	</section>
 
 </main>
+
+<script src="js/awesomplete.min.js"></script>
+<script>
+	function getMeal(){
+		var mealValue = document.getElementsByClassName("inputMeal")[0].value;
+
+		if(mealValue == "pizza"){
+			location.href = "screen_2.php";
+		} else if (mealValue == "hamburger"){
+			location.href = "screen_3.php";
+		} else {
+			location.href = "screen_3.php";
+		}
+	}
+
+	document.getElementsByClassName("submitMeal")[0].addEventListener("click", getMeal);
+</script>
+
 <?php include 'includes/footer.php'; ?>
 
+select.chenge.event
+convert to lower case.
 
 
