@@ -29,27 +29,59 @@
 
 	<section class="mainArea2--predators">
 		
+		<article class="predators--topbar">
+			<h1 class="predators--topbar-heading">Choose Your Predator</h1>
 			
-				<legend>Choose Your Predator</legend>
-				
-				<select name="predator" id="selectPredator">
+			<form class="predators--topbar-form"">
+				<select class="topbar-form-select" name="predator" id="predator">
+					<option value="">Select ...</option>
 					<option name="bull" value="bull"><span>Bull</span></option>
-				<option name="tyrannotitan" value="tyrannotitan"><span>Tyrannotitan</span></option>
-				<option name="tiger" value="tiger"><span>Tiger</span></option>
-				<option name="justinBieber" value="justinBieber"><span>Justin Bieber</span>></option>
+					<option name="tyrannotitan" value="tyrannotitan"><span>Tyrannotitan</span></option>
+					<option name="bieber" value="bieber"><span>Justin Bieber</span></option>
+					<option value="tiger"><span>Tiger</span></option>
+					<option name="clown" value="clown"><span>Clown</span></option>
+					
 				</select>
-<img src="img/bull.png" align="">
-<img src="img/tyrannotitan.png" align="">
-<img src="tiger.png" align="">
-<img src="justin_bieber.png" align="">
+			</form>
+		</article>
+
+
+		<article class="predators--sidebarleft">
+			<img id="tiger" src="">
 			
-		
+			<!--<img src="img/bull.png" alt="Bull">
+			<img src="img/tyrannotitan.png" alt="Tyrannotitan">
+			
+			<img src="img/bieber.png" alt="Justing Bieber">-->
+		</article>
+
+		<article class="predators--center">
+			
+		</article>
+
+		<article class="predators--sidebarright">
+			
+		</article>		
 	</section>
 
-
-	
-
 </main>
+<script>
+	document.querySelector('#predator').onchange = changeEventHandler;
+
+
+    	function changeEventHandler(event) {
+
+		    // if nothing has been selected: 
+		    if(!event.target.value) {
+		    	console.log('Please Select One');
+		    }
+		    else {
+		    	var value = event.target.value;
+		    	console.log(value);
+		    	document.getElementById('tiger').src = value + ".png";
+		    }
+		}
+</script>
 <script src="JS/style.js" type="text/javascript"></script>
 <script
   src="http://code.jquery.com/jquery-2.2.4.js"
