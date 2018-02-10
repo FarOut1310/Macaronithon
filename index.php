@@ -7,8 +7,8 @@
 
 		<div class="mainArea1--searchField-left"></div>
 		<div class="mainArea1--searchField-center">
-			<input class="awesomplete inputMeal" placeholder="Search for the meal" data-list="Pizza, Hamburger">
-			<button class="submitMeal"><span>Go!</span></button>
+			<input class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, hamburger">
+			<button onclick="getLowercase()" class="submitMeal"><span>Go!</span></button>
 		</div>
 		<div class="mainArea1--searchField-right"></div>
 	</section>
@@ -22,7 +22,12 @@
 	</section>
 
 </main>
-
+<script>
+	function getLowercase() {
+		var lowercaseValue = document.getElementsByClassName("inputMeal")[0].value;
+		var res = str.toLowerCase();
+	}
+</script>
 <script src="js/awesomplete.min.js"></script>
 <script src="js/getmeal.js" type="text/javascript"></script>
 

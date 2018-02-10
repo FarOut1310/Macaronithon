@@ -29,7 +29,7 @@
   width: 100vw;
 }
 
-/* --------------------------------------*/
+/* ----------------- Search Field Grid ---------------------*/
 .mainArea1--searchField {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -52,7 +52,7 @@ height: 30vh;
 grid-column-start: 3;
 height: 30vh;
 }
-/* ---------------------------------------*/
+/* ------------------ Background Grid ---------------------*/
 .mainArea1--background {
   display: grid;
   width: 100vw;
@@ -100,32 +100,79 @@ background-size: 20px 20px;
         			MAIN: SCREEN_2
 .................................................*/
 .mainArea2 {
-  width: 100vw; }
+  width: 100vw;
+   }
+
+/* ------------------ Pizza Grid ---------------------*/
 
 .mainArea2--pizza {
   display: grid;
-  grid-template: 'main main main main';
-  grid-template-columns: 2fr 2fr 2fr 2fr; }
+  grid-template-areas: 
+  'topbar topbar topbar topbar'
+  'sidebarleft article aside sidebarright';
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+   }
 
-.pizza--article {
-  background: lightblue; }
+    .pizza--topbar {
+      grid-area: topbar;
+    }
+            .pizza--topbar-heading {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.8em;
+              margin: 0;
+              padding: 0;
+            }
 
-.pizza--article-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8em;
-  padding: 1%; }
+    .pizza--sidebarleft {
+      grid-area: sidebarleft;
+    }
+    .pizza--article {
+      grid-area: article;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid black;
+       }
+            .pizza--article:hover {
+              background: lightgrey;
+               }
 
-.pizza--article-paragraph {
-  font-size: 1.3em;
-  padding: 3%; }
+            .pizza--article-heading {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.8em;
+              padding: 1%; }
 
-.pizza--aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white; }
+            .pizza--article-paragraph {
+              font-size: 1.3em;
+              padding: 3%; }
+
+    .pizza--aside {
+      grid-area: aside;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid black;
+      background: white; 
+    }
+            .pizza--aside:hover {
+              background: lightgrey;
+            }
+            .pizza--aside-img {
+              width: 70%;
+            }
+    .pizza--sidebarright {
+      grid-area: sidebarright;
+    }
+/* ------------------ Predators Grid ---------------------*/
+
+.mainArea2--predators {
+  background: lightgreen;
+}
 
 /* ...............................................
               FOOTER
