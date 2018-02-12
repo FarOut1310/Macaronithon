@@ -12,7 +12,7 @@
   grid-area: main; }
 
 body {
-  background-image: url(../image/cartoon-background-hd-008.jpg); }
+  background-image: url(../img/cartoon-background-hd-008.jpg); }
 
 .macthon-container {
   display: grid;
@@ -45,3 +45,5 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
+  .bDBlock__p {
+    color: black; }
