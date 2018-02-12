@@ -1,0 +1,47 @@
+/* CSS Document */
+.logoItem {
+  grid-area: header; }
+
+.tSearchItem {
+  grid-area: right; }
+
+.mainSearchBlock {
+  grid-area: main; }
+
+.bDBlock {
+  grid-area: main; }
+
+body {
+  background-image: url(../image/cartoon-background-hd-008.jpg); }
+
+.macthon-container {
+  display: grid;
+  grid-template-areas: 'header header header right' 'main main main main' 'main main main main';
+  grid-gap: 15px;
+  padding: 15px; }
+
+.headSearch {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-top: 2%;
+  margin-right: 2%; }
+
+h2 {
+  color: black; }
+
+h3 {
+  color: black; }
+
+.searchBlock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.bDBlock {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
