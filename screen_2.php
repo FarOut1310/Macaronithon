@@ -47,12 +47,7 @@
 
 
 		<article class="predators--sidebarleft">
-			<img id="tiger" src="">
-			
-			<!--<img src="img/bull.png" alt="Bull">
-			<img src="img/tyrannotitan.png" alt="Tyrannotitan">
-			
-			<img src="img/bieber.png" alt="Justing Bieber">-->
+			<img id="image" src="">
 		</article>
 
 		<article class="predators--center">
@@ -60,14 +55,13 @@
 		</article>
 
 		<article class="predators--sidebarright">
-			
+			<img id="humanrun" src="img/humanrun.png">
 		</article>		
 	</section>
 
 </main>
 <script>
 	document.querySelector('#predator').onchange = changeEventHandler;
-
 
     	function changeEventHandler(event) {
 
@@ -78,7 +72,7 @@
 		    else {
 		    	var value = event.target.value;
 		    	console.log(value);
-		    	document.getElementById('tiger').src = value + ".png";
+		    	document.getElementById('image').src = value + ".png";
 		    }
 		}
 </script>

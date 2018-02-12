@@ -175,9 +175,9 @@ background-size: 20px 20px;
   grid-template-areas: 
   'topbar topbar topbar'
   'sidebarleft article sidebarright';
-  /*grid-template-columns: 2fr 2fr 2fr;*/
+  grid-template-columns: 2fr 2fr 2fr;
   grid-gap: 10px;
-  background: lightgreen;
+  background: white;
 }
 
 .predators--topbar {
@@ -197,7 +197,14 @@ background-size: 20px 20px;
 
 .predators--sidebarleft {
 grid-area: sidebarleft;
+position: relative;
 }
+#image {
+  width: 80%;
+  float: right; 
+}
+
+
 
 .predators--center {
   grid-area: article;
@@ -206,6 +213,10 @@ grid-area: sidebarleft;
 .predators--sidebarright {
   grid-area: sidebarright;
 }
+ #humanrun {
+  width: 40%;
+ }
+
 /* ...............................................
               FOOTER
 .................................................*/
