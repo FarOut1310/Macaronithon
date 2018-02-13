@@ -14,10 +14,10 @@
 	</section>
 
 	<section class="mainArea1--background">
-		<div class="mainArea1--background-left"><img src="img/predatorrex.png" alt="Predator" width="300px"></div>
-		<dir class="mainArea1--background-center"></dir>
-		<dir class="mainArea1--background-right"><img src="img/humanrun.png" alt="Predator" width="200px"></dir>
-		<dir class="mainArea1--background-bottom"></dir>
+		<div class="mainArea1--background-left"><img id="predatorrex" src="img/predatorrex.png" alt="Predator" width="300px"></div>
+		<div class="mainArea1--background-center"></div>
+		<div class="mainArea1--background-right"><img id="humanrun" src="img/humanrun.png" alt="Predator" width="200px"></div>
+		<div class="mainArea1--background-bottom"></div>
 		
 	</section>
 
@@ -33,7 +33,6 @@
 
 <?php include 'includes/footer.php'; ?>
 
-select.chenge.event
-convert to lower case.
+
 
 

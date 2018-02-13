@@ -32,16 +32,21 @@
 /* ----------------- Search Field Grid ---------------------*/
 .mainArea1--searchField {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-areas: 
+  "left center right";
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-content: center;
 }
 
 .mainArea1--searchField-left {
+grid-area: left;
 grid-column-start: 1;
 height: 30vh;
 }
+
 .mainArea1--searchField-center {
+grid-area: center;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -49,46 +54,55 @@ grid-column-start: 2;
 height: 30vh;
 }
 .mainArea1--searchField-right {
+grid-area: right;
 grid-column-start: 3;
 height: 30vh;
 }
+
 /* ------------------ Background Grid ---------------------*/
 .mainArea1--background {
   display: grid;
-  width: 100vw;
+  /*width: 100vw;*/
   grid-template-areas: 
-  'left center right'
-  'bottom bottom bottom';
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2, repeat(1, 1fr);
-  justify-content: space-around;
-  align-content: center;
+  "left center right"
+  "bottom bottom bottom";
+  grid-template-columns: 1fr 1fr 1fr;
+  /*justify-content: space-around;
+  align-content: center;*/
 }
 
 .mainArea1--background-left {
-height: 25vh;
+grid-area: left;
+
 grid-area: left;
 text-align: right;
 }
+#predatorrex {
+  width: 57%;
+}
 
 .mainArea1--background-center {
-height: 25vh;
+grid-area: center;
+
 margin: 0;
 padding: 0;
 grid-area: center;
 }
 .mainArea1--background-right {
-height: 25vh;
+grid-area: right;
 margin: 0;
 padding: 0;
-grid-area: right;
 }
+#humanrun {
+  width: 40%;
+ }
+
 .mainArea1--background-bottom {
-  grid-row-start: 2;
+  grid-area: bottom;
+  /*grid-row-start: 2;*/
   margin: 0;
   height: 20vh;
-  width: 100vw;
-grid-area: bottom;
+  /*width: 100vw;*/
 box-sizing: border-box;
 background:
 radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
@@ -200,11 +214,9 @@ grid-area: sidebarleft;
 position: relative;
 }
 #image {
-  width: 80%;
+  width: 95%;
   float: right; 
 }
-
-
 
 .predators--center {
   grid-area: article;
@@ -213,10 +225,7 @@ position: relative;
 .predators--sidebarright {
   grid-area: sidebarright;
 }
- #humanrun {
-  width: 40%;
- }
-
+ 
 /* ...............................................
               FOOTER
 .................................................*/
