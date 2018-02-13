@@ -12,13 +12,13 @@
 		<article class="pizza--sidebarleft"></article>
 
 		<article class="pizza--article">
-			<h1 class="pizza--article-heading">Cheeseburger</h1>
-			<p class="pizza--article-paragraph">The greatest creation. All the major food groups combined together into one perfect dish. It contains: 35% fat, 40% carbs and 25% protein.</p>
+			<h1 class="pizza--article-heading">Club Sandwich</h1>
+			<p class="pizza--article-paragraph">The next evolution of the sandwich we all know and love (note the third bread slice). Obtain the Plain Badge from Goldenrod City to train it further. It contains: 10% fat, 50% carbs and 40% protein.</p>
 		</article>
 
 
 		<aside class="pizza--aside">
-			<img class="pizza--aside-img" src="img/cheesebrgr.jpg" alt="Cheeseburger">
+			<img class="pizza--aside-img" src="img/clubsndwch.jpg" alt="Club Sandwich">
 		</aside>
 
 		<article class="pizza--sidebarright"></article>
