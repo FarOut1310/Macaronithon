@@ -1,0 +1,272 @@
+/* ...............................................
+        			HEADER
+.................................................*/
+.macaronithon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  margin: 0; 
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.macaronithon--logo {
+  width: 5em;
+  }
+  .macaronithon--heading {
+    font-size: 2.5em;
+    color: #f6d24d;
+     }
+}
+
+.macaronithon--header-span1 {
+  color: white; }
+
+.macaronithon--header-span2 {
+  color: #f6d24d; }
+
+
+/* ...............................................
+              MAIN: SCREEN_1
+.................................................*/
+.mainArea1 {
+  width: 100vw;
+}
+
+/* ----------------- Search Field Grid ---------------------*/
+.mainArea1--searchField {
+  display: grid;
+  grid-template-areas: 
+  "left center right";
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.mainArea1--searchField-left {
+grid-area: left;
+grid-column-start: 1;
+height: 30vh;
+}
+
+.mainArea1--searchField-center {
+grid-area: center;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-column-start: 2;
+height: 30vh;
+}
+.mainArea1--searchField-right {
+grid-area: right;
+grid-column-start: 3;
+height: 30vh;
+}
+
+/* ------------------ Background Grid ---------------------*/
+.mainArea1--background {
+  display: grid;
+  /*width: 100vw;*/
+  grid-template-areas: 
+  "left center right"
+  "bottom bottom bottom";
+  grid-template-columns: 1fr 1fr 1fr;
+  /*justify-content: space-around;
+  align-content: center;*/
+}
+
+.mainArea1--background-left {
+grid-area: left;
+
+grid-area: left;
+text-align: right;
+}
+#predatorrex {
+  width: 57%;
+}
+
+.mainArea1--background-center {
+grid-area: center;
+
+margin: 0;
+padding: 0;
+grid-area: center;
+}
+.mainArea1--background-right {
+grid-area: right;
+margin: 0;
+padding: 0;
+}
+#humanrun {
+  width: 40%;
+ }
+
+.mainArea1--background-bottom {
+  grid-area: bottom;
+  /*grid-row-start: 2;*/
+  margin: 0;
+  height: 20vh;
+  /*width: 100vw;*/
+box-sizing: border-box;
+background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+#8a3;
+background-size: 20px 20px;
+}
+
+.inputMeal {
+  height: 22px;
+  /*border-width: 4px;
+  border-color: #f6d24d;
+  border-style: outset;*/
+}
+.inputMeal:focus {
+  outline: none;
+}
+.submitMeal {
+  width: 60px;
+  height: 30px;
+  color: white;
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-width: 4px;
+border-color: #f6d24d;
+}
+/* ...............................................
+        			MAIN: SCREEN_2
+.................................................*/
+.mainArea2 {
+  width: 100vw;
+   }
+
+/* ------------------ Pizza Grid ---------------------*/
+
+.mainArea2--pizza {
+  display: grid;
+  grid-template-areas: 
+  'topbar topbar topbar topbar'
+  'sidebarleft article aside sidebarright';
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 10px;
+   }
+
+    .pizza--topbar {
+      grid-area: topbar;
+    }
+            .pizza--topbar-heading {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.8em;
+              margin: 0;
+              padding: 0;
+            }
+
+    .pizza--sidebarleft {
+      grid-area: sidebarleft;
+    }
+    .pizza--article {
+      grid-area: article;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid black;
+       }
+            .pizza--article:hover {
+              background: #f6d24d;
+               }
+
+            .pizza--article-heading {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1.8em;
+              padding: 1%; }
+
+            .pizza--article-paragraph {
+              font-size: 1.3em;
+              padding: 3%; }
+
+    .pizza--aside {
+      grid-area: aside;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid black;
+      background: white; 
+    }
+            .pizza--aside:hover {
+              background: #f6d24d;
+            }
+            .pizza--aside-img {
+              width: 70%;
+            }
+    .pizza--sidebarright {
+      grid-area: sidebarright;
+    }
+/* ------------------ Predators Grid ---------------------*/
+
+.mainArea2--predators {
+  display: grid;
+  grid-template-areas: 
+  'topbar topbar topbar'
+  'sidebarleft article sidebarright';
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 10px;
+  background: white;
+}
+
+.predators--topbar {
+  grid-area: topbar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.8em;
+}
+
+.predators--topbar-heading {
+  display: inline;
+  margin: 0;
+  font-size: 1em;
+}
+
+.predators--sidebarleft {
+grid-area: sidebarleft;
+position: relative;
+}
+#image {
+  width: 95%;
+  float: right; 
+}
+
+.predators--center {
+  grid-area: article;
+}
+
+.predators--sidebarright {
+  grid-area: sidebarright;
+}
+ 
+/* ...............................................
+              FOOTER
+.................................................*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*# sourceMappingURL=style.css.map */
