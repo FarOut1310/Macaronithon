@@ -12,13 +12,13 @@
 		<article class="pizza--sidebarleft"></article>
 
 		<article class="pizza--article">
-			<h1 class="pizza--article-heading">Cheeseburger</h1>
-			<p class="pizza--article-paragraph">The greatest creation. All the major food groups combined together into one perfect dish. It contains: 35% fat, 40% carbs and 25% protein.</p>
+			<h1 class="pizza--article-heading">Tomato Soup</h1>
+			<p class="pizza--article-paragraph">Main ingredient: tomatoes. Other ingredients: You're probably better off not knowing. Seriously, don't think too much about it. It contains: 10% fat, 55% carbs and 35% protein.</p>
 		</article>
 
 
 		<aside class="pizza--aside">
-			<img class="pizza--aside-img" src="img/cheesebrgr.jpg" alt="Cheeseburger">
+			<img class="pizza--aside-img" src="img/tomatosoup.jpg" alt="Tomato Soup">
 		</aside>
 
 		<article class="pizza--sidebarright"></article>
