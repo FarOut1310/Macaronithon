@@ -7,8 +7,8 @@
 
 		<div class="mainArea1--searchField-left"></div>
 		<div class="mainArea1--searchField-center">
-			<input class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, hamburger">
-			<button onclick="getLowercase()" class="submitMeal"><span>Go!</span></button>
+			<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, hamburger">
+			<button class="submitMeal"><span>Go!</span></button>
 		</div>
 		<div class="mainArea1--searchField-right"></div>
 	</section>
