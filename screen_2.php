@@ -39,7 +39,6 @@
 					<option name="tyrannotitan" value="tyrannotitan"><span>Tyrannotitan</span></option>
 					<option name="bieber" value="bieber"><span>Justin Bieber</span></option>
 					<option value="tiger"><span>Tiger</span></option>
-					<option name="clown" value="clown"><span>Clown</span></option>
 					
 				</select>
 			</form>
@@ -61,19 +60,7 @@
 
 </main>
 <script>
-	document.querySelector('#predator').onchange = changeEventHandler;
-
-    	function changeEventHandler(event) {
-		    // if nothing has been selected: 
-		    if(!event.target.value) {
-		    	console.log('Please Select One');
-		    }
-		    else {
-		    	var value = event.target.value;
-		    	console.log(value);
-		    	document.getElementById('image').src = "img/" + value + ".png";
-		    }
-		}
+	
 </script>
 <script src="JS/style.js" type="text/javascript"></script>
 <script
