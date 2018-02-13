@@ -39,7 +39,6 @@
 					<option name="tyrannotitan" value="tyrannotitan"><span>Tyrannotitan</span></option>
 					<option name="bieber" value="bieber"><span>Justin Bieber</span></option>
 					<option value="tiger"><span>Tiger</span></option>
-					
 				</select>
 			</form>
 		</article>
@@ -59,9 +58,7 @@
 	</section>
 
 </main>
-<script>
-	
-</script>
+<script src="js/choose_predator.js" type="text/javascript"></script>
 <script src="JS/style.js" type="text/javascript"></script>
 <script
   src="http://code.jquery.com/jquery-2.2.4.js"

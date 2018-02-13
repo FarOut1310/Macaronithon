@@ -8,18 +8,26 @@
   width: 100vw;
   height: 15vh;
   margin: 0; 
-
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.macaronithon--logo {
+  width: 5em;
+  }
   .macaronithon--heading {
     font-size: 2.5em;
+    color: #f6d24d;
      }
+}
 
 .macaronithon--header-span1 {
-  color: #8A2BE2; }
+  color: white; }
 
 .macaronithon--header-span2 {
-  color: #A52A2A; }
+  color: #f6d24d; }
 
 
 /* ...............................................
@@ -110,6 +118,26 @@ radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 
 #8a3;
 background-size: 20px 20px;
 }
+
+.inputMeal {
+  height: 22px;
+  /*border-width: 4px;
+  border-color: #f6d24d;
+  border-style: outset;*/
+}
+.inputMeal:focus {
+  outline: none;
+}
+.submitMeal {
+  width: 60px;
+  height: 30px;
+  color: white;
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-width: 4px;
+border-color: #f6d24d;
+}
 /* ...............................................
         			MAIN: SCREEN_2
 .................................................*/
@@ -150,7 +178,7 @@ background-size: 20px 20px;
       border: 1px solid black;
        }
             .pizza--article:hover {
-              background: lightgrey;
+              background: #f6d24d;
                }
 
             .pizza--article-heading {
@@ -174,7 +202,7 @@ background-size: 20px 20px;
       background: white; 
     }
             .pizza--aside:hover {
-              background: lightgrey;
+              background: #f6d24d;
             }
             .pizza--aside-img {
               width: 70%;
@@ -235,7 +263,10 @@ position: relative;
   align-items: center;
   width: 100vw;
   height: 10vh;
-  background-color: #8A2BE2;
+  background: #ADD100;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /*# sourceMappingURL=style.css.map */
