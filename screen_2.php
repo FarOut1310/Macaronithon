@@ -34,12 +34,14 @@
 			
 			<form class="predators--topbar-form"">
 				<select class="topbar-form-select" name="predator" id="predator">
-					<option value="">Select ...</option>
-					<option name="bull" value="bull"><span>Bull</span></option>
-					<option name="tyrannotitan" value="tyrannotitan"><span>Tyrannotitan</span></option>
-					<option name="bieber" value="bieber"><span>Justin Bieber</span></option>
-					<option value="tiger"><span>Tiger</span></option>
+					<option class="inputPredator" value="">Select ...</option>
+					<option class="inputPredator" name="bull" value="bull" data-list="bull"><span>bull</span></option>
+					<option class="inputPredator" name="tyrannotitan" value="tyrannotitan" data-list="tyrannotitan"><span>tyrannotitan</span></option>
+					<option class="inputPredator" name="bieber" value="bieber" data-list="bieber"><span>bieber</span></option>
+					<option class="inputPredator" value="tiger" data-list="tiger"><span>tiger</span></option>
 				</select>
+
+			<button class="submitPredator"><span>Go!</span></button>
 			</form>
 		</article>
 
@@ -49,7 +51,7 @@
 		</article>
 
 		<article class="predators--center">
-			
+			<h1 id="post"> </h1>
 		</article>
 
 		<article class="predators--sidebarright">
@@ -58,14 +60,41 @@
 	</section>
 
 </main>
-<script src="js/choose_predator.js" type="text/javascript"></script>
-<script src="JS/style.js" type="text/javascript"></script>
 <script
   src="http://code.jquery.com/jquery-2.2.4.js"
   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
   crossorigin="anonymous">	
 </script>
+<script src="js/choose_predator.js" type="text/javascript"></script>
+<script src="JS/style.js" type="text/javascript"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+<script>
+	document.querySelector('#predator').onchange = changeEventHandler;
+	function changeEventHandler() {
+            // if nothing has been selected:
+            var value = event.target.value;
+
+            var pizza = 185;
+            var bull = 150;
+            var tiger = 180;
+            var tyrannotitan = 200;
+            var bieber = 500;
+            var value = document.getElementByName('bull');
+            
+            
+            if (value > pizza) {
+                console.log(value);
+                document.getElementById('image').src = "img/" + value + ".png";
+                $('#post').text("you have lost");
+             }
+            else {
+                $('#post').text("you have Won against" + ' ' + value);
+                document.getElementById('image').src = "img/" + value + ".png";
+            }
+            
+        }
+</script>
 
 <?php include 'includes/footer.php'; ?>
