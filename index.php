@@ -20,9 +20,9 @@
 
 
 	<!-- CSS & SASS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="sass/styles.scss">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 
 	<!-- Front page logo/name -->
 	<div class="item1">
-        <div class="animated bounceInDown">
+        <div class="animated zoomIn">
         	<h1 id="frontname">Macaronithon(insert logo)</h1>
 			<p id="fronttext">How far can you run before you get eaten</p>
 		</div>
@@ -45,19 +45,20 @@
 
 	<!-- Search bar -->
 	<div class="item2">
-		<input type="text" placeholder="Search..">
+		<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, hamburger">
+		<button class="submitMeal"><span>Go!</span></button>
 	</div>
 
 	<!-- Pictures of the predator and human -->
 	<div class="item3">
         <div class="animated tada">
-			<img src="images/predatorrex.png" alt="Predator hunting running human" title="T-rex" class="animated zoomIn t-rex">
+			<img src="images/predatorrex.png" alt="Predator hunting running human" title="T-rex" class="t-rex">
         </div>
 	</div>
 
 	<div class="item4">
         <div class="animated shake">
-    		<img src="images/humanrun.png" alt="Human running from predator" title="Human" class="animated zoomIn jello human">
+    		<img src="images/humanrun.png" alt="Human running from predator" title="Human" class="human">
         </div>
 	</div>
 
@@ -67,7 +68,12 @@
 	</footer>
 
 </div>
-	<!-- Scripts -->
-	<script src="#"></script>
+
+	<!-- Scripts for Macaronithon -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/awesomplete.min.js"></script>
+	<script src="js/getmeal.js" type="text/javascript"></script>
+	<script src="js/popup.js" type="text/javascript"></script>
+
 </body>
 </html>
