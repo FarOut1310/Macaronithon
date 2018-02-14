@@ -1,6 +1,13 @@
 <?php require 'includes/head.php'; ?>
 <?php require 'includes/header.php'; ?>
-
+<!--Popup-->
+<span class="window--alert none conditionalClose "><p>Unfortunately we don't have your product. Do you want to add it?</p>
+		<div class="grid-container--buttons">
+		<div class="button button--ok">OK</div>
+		<div class="button button--cancel">CANCEL</div>
+		</div>
+		</span>
+		
 <main class="mainArea1">
 	
 	<section class="mainArea1--searchField">
@@ -28,8 +35,10 @@
 		var res = str.toLowerCase();
 	}
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/awesomplete.min.js"></script>
 <script src="js/getmeal.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
 
 <?php include 'includes/footer.php'; ?>
 
