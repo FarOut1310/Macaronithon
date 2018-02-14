@@ -18,7 +18,7 @@
 
 
 		<aside class="pizza--aside">
-			<img class="pizza--aside-img" src="img/pizza.png" alt="Pizza">
+			<img class="pizza--aside-img" id="mealImg" src="img/pizza.png" alt="Pizza">
 		</aside>
 
 		<article class="pizza--sidebarright"></article>
