@@ -12,7 +12,8 @@ function getMeal(){
 		} else if (mealValue === "tomato soup") {
 			location.href = "screen_6.php";
 		} else {
-			location.href = "search.php";
+		$('.window--alert').removeClass('none');
+			$(".conditionalOpen, .conditionalClose").toggleClass("conditionalOpen conditionalClose");
 		}
 	}
 
