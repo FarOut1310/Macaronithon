@@ -14,7 +14,7 @@
 
 		<div class="mainArea1--searchField-left"></div>
 		<div class="mainArea1--searchField-center">
-			<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, hamburger">
+			<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, cheeseburger, caesar salad, club sandwich, tomato soup">
 			<button class="submitMeal"><span>Go!</span></button>
 		</div>
 		<div class="mainArea1--searchField-right"></div>

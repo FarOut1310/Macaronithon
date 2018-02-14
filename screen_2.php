@@ -12,8 +12,8 @@
 		<article class="pizza--sidebarleft"></article>
 
 		<article class="pizza--article">
-			<h1 class="pizza--article-heading">Pizza</h1>
-			<p class="pizza--article-paragraph">Pizza is a traditional Italian meal, where a bunch of second-class rubbish is layed out onto a flatbread. It consists of: 45% of fats, 35% of carbs and 20% of proteins.</p>
+			<h1 class="pizza--article-heading" id="mealHead"></h1>
+			<p class="pizza--article-paragraph" id="mealParagraph"></p>
 		</article>
 
 
@@ -67,6 +67,7 @@
 </script>
 <script src="js/choose_predator.js" type="text/javascript"></script>
 <script src="JS/style.js" type="text/javascript"></script>
+<script src="JS/setmeal.js" type="text/javascript"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
