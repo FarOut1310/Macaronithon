@@ -16,7 +16,7 @@
 	<link rel="icon" type="img/png" href="favicon-16x16.png" sizes="16x16" />
 
 <!-- CSS & SASS -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="sass/styles.scss">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">

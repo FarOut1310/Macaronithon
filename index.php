@@ -1,50 +1,47 @@
-<!-- Grid start -->
-<div class="grid-container">
-
-	<!-- Header if needed 
-	<header>
-	</header>
-	-->
-
-	<!-- Front page logo/name -->
-	<div class="item1">
-        <div class="animated zoomIn">
-        	<h1 id="frontname">Macaronithon(insert logo)</h1>
-			<p id="fronttext">How far can you run before you get eaten</p>
+<?php require 'includes/head.php'; ?>
+<?php require 'includes/header.php'; ?>
+<!--Popup-->
+<span class="window--alert none conditionalClose "><p>Unfortunately we don't have your product. Do you want to add it?</p>
+		<div class="grid-container--buttons">
+		<div class="button button--ok">OK</div>
+		<div class="button button--cancel">CANCEL</div>
 		</div>
-	</div>
+		</span>
+		
+<main class="mainArea1">
+	
+	<section class="mainArea1--searchField">
 
-	<!-- Search bar -->
-	<div class="item2">
-		<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, cheeseburger, caesar salad, club sandwich, tomato soup">
-		<button class="submitMeal"><span>Go!</span></button>
-	</div>
+		<div class="mainArea1--searchField-left"></div>
+		<div class="mainArea1--searchField-center">
+			<input onclick="getLowercase()" class="awesomplete inputMeal" placeholder="Search for the meal" data-list="pizza, cheeseburger, caesar salad, club sandwich, tomato soup">
+			<button class="submitMeal"><span>Go!</span></button>
+		</div>
+		<div class="mainArea1--searchField-right"></div>
+	</section>
 
-	<!-- Pictures of the predator and human -->
-	<div class="item3">
-        <div class="animated tada">
-			<img src="images/predatorrex.png" alt="Predator hunting running human" title="T-rex" class="t-rex">
-        </div>
-	</div>
+	<section class="mainArea1--background">
+		<div class="mainArea1--background-left"><img id="predatorrex" src="img/predatorrex.png" alt="Predator" width="300px"></div>
+		<div class="mainArea1--background-center"></div>
+		<div class="mainArea1--background-right"><img id="humanrun" src="img/humanrun.png" alt="Predator" width="200px"></div>
+		<div class="mainArea1--background-bottom"></div>
+		
+	</section>
 
-	<div class="item4">
-        <div class="animated shake">
-    		<img src="images/humanrun.png" alt="Human running from predator" title="Human" class="human">
-        </div>
-	</div>
+</main>
+<script>
+	function getLowercase() {
+		var lowercaseValue = document.getElementsByClassName("inputMeal")[0].value;
+		var res = str.toLowerCase();
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/awesomplete.min.js"></script>
+<script src="js/getmeal.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
 
-	<!-- Footer if needed-->
-	<footer>
-		<!-- I was thinking social media link or something maybe -->
-	</footer>
+<?php include 'includes/footer.php'; ?>
 
-</div>
 
-	<!-- Scripts for Macaronithon -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/awesomplete.min.js"></script>
-	<script src="js/getmeal.js" type="text/javascript"></script>
-	<script src="js/popup.js" type="text/javascript"></script>
 
-</body>
-</html>
+
