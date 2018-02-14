@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<html>
-<head>
-	<!-- Title -->
-	<title>Macaronithon - How far can you run before you get eaten.</title>
-
-	<!-- Description -->
-	<meta name="description" content="Macaronithon is an online web application where you can see how far you can run on different kinds of food. Just made in a new and fun way!">
-
-	<!-- Keywords -->
-	<meta name="keywords" content="HTML,CSS,JavaScript">
-
-	<!-- Viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
-
-	<!-- CSS & SASS -->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="sass/styles.scss">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-
-</head>
-<body>
-
-	<!-- Grid start -->
+<!-- Grid start -->
 <div class="grid-container">
 
 	<!-- Header if needed 
