@@ -18,7 +18,7 @@
 
 
 		<aside class="pizza--aside">
-			<img class="pizza--aside-img" src="img/pizza.png" alt="Pizza">
+			<img class="pizza--aside-img" src="images/pizza.png" alt="Pizza">
 		</aside>
 
 		<article class="pizza--sidebarright"></article>
@@ -55,7 +55,7 @@
 		</article>
 
 		<article class="predators--sidebarright">
-			<img id="humanrun" src="img/humanrun.png">
+			<img id="humanrun" src="images/humanrun.png">
 		</article>		
 	</section>
 
@@ -85,12 +85,12 @@
             
             if (value > pizza) {
                 console.log(value);
-                document.getElementById('image').src = "img/" + value + ".png";
+                document.getElementById('image').src = "images/" + value + ".png";
                 $('#post').text("you have lost");
              }
             else {
                 $('#post').text("you have Won against" + ' ' + value);
-                document.getElementById('image').src = "img/" + value + ".png";
+                document.getElementById('image').src = "images/" + value + ".png";
             }
             
         }
