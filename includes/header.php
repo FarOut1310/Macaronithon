@@ -1,4 +1,7 @@
 <header class="macaronithon">
-	<img class="macaronithon--logo" src="images/mlogo.png" alt="Macaronithon logo">
-	<h1 class="macaronithon--heading"><span class="macaronithon--header-span1">acaroni</span><span class="macaronithon--header-span2">thon</span></h1>
+<a class="back--link" href="index.php"><i class="fa fa-arrow-left"></i><span class="back--link-hover">back</span></a>
+
+<a class="frontpage--link" href="index.php">
+	<img id="logoheader" src="images/logotry.png" alt="Macaronithon logo" title="Macaronithon">
+</a>
 </header>
